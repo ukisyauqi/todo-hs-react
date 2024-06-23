@@ -88,11 +88,11 @@ function App() {
                 <button
                   className={`${activeMenu === 1 && "text-black"}`}
                   onClick={() => {
-                    setFilteredTodos(todos.filter((todo) => !todo.checked));
+                    setFilteredTodos(todos.filter((todo) => todo.checked));
                     setActiveMenu(1);
                   }}
                 >
-                  Hide Done
+                  Show Done
                 </button>
               </div>
               <button
